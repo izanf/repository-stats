@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 import Layout from '../../components/layout';
 import Card from './components/Card';
+import BarChart from './components/Charts/BarChart';
+import LineChart from './components/Charts/LineChart';
 
 const GridSystem = styled.div`
 display: grid;
@@ -25,7 +27,7 @@ const Dashboard = () => (
     <GridSystem>
       <GridItem area="graph-merge-time">
         <Card title="Average Merge Time by Pull Request Size">
-          Apenas um teste!
+          <BarChart />
         </Card>
       </GridItem>
       <GridItem area="merge-time">
@@ -40,7 +42,7 @@ const Dashboard = () => (
       </GridItem>
       <GridItem area="month-summary">
         <Card title="Month Summary">
-          Average Issue Close Time
+          <LineChart />
         </Card>
       </GridItem>
     </GridSystem>

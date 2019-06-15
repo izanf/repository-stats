@@ -16,6 +16,7 @@ justify-content: center;
 align-items: flex-start;
 width: 80px;
 background: ${Colors.blueBell};
+padding: 1.5rem 0;
 `;
 
 const Container = styled.div`
@@ -25,15 +26,25 @@ flex-direction: column;
 background: ${Colors.solitude};
 `;
 
+const Figure = styled.figure`
+width: 30px;
+height: 30px;
+background: ${Colors.dodgerBlue};
+border-radius: 100%;
+`;
+
 const Logo = styled.img`
-width: 50px;
-/* margin: 0 auto; */
+width: 100%;
+height: 100%;
+object-fit: contain;
 `;
 
 const Layout = ({ children }) => (
   <Wrapper>
     <LeftBar>
-      <Logo src={Images.logo} alt="Liferay Portal" />
+      <Figure>
+        <Logo src={Images.logo} alt="Liferay Portal" />
+      </Figure>
     </LeftBar>
     <Container>
       <Header />

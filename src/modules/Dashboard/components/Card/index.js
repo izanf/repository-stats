@@ -10,7 +10,9 @@ box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
 border-radius: .3rem;
 `;
 
-const Title = styled.h4`
+const Title = styled.h3`
+font-size: .9rem;
+font-weight: 100;
 padding: 1rem 1.5rem;
 border-bottom: 1px solid #EEE;
 `;
