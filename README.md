@@ -2,7 +2,7 @@ Github repository stats
 
 ## Demo
 
-[Go to DEMO](repository-stats.surge.sh).
+[Go to DEMO](http://repository-stats.surge.sh).
 
 ## Available Scripts
 
